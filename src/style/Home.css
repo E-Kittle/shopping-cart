@@ -1,0 +1,10 @@
+body {
+    background-color: black;
+    color: white;
+}
+
+.hero-container {
+    background-image: url(/public/images/deep-sea.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
