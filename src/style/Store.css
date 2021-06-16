@@ -51,9 +51,11 @@
     height: 400px;
 }
 
-.item-page .item-data {
+.item-data {
     width: 50%;
     text-align: center;
+    display: flex;
+    flex-direction: column;
 }
 
 .item-data h1 {
@@ -63,19 +65,22 @@
 
 .item-cta {
     margin-top: 100px;
+    /* border: solid; */
+    width: 40%;
+    align-self: center;
+    text-align: left;
 }
 
 .purchase-qty-wrapper {
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
     padding: 10px 0;
 }
 
-form button {
-    /* border: solid #013152 2px; */
-    border: none;
-    background-color: #000000;
-    color: white;
+.add-item-section {
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
 }
 
 

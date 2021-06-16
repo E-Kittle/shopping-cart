@@ -1,15 +1,16 @@
 
 .shopping-cart-container {
     width: 60%;
-        /* Need a min width */
-        min-width: 600px;
+    min-width: 600px;
     margin: 0 auto;
     background: rgba(0, 174, 255, 0.1);
+    /* Could add these effects to add a scrollbar */
+    /* height: 70vh;
+    overflow-y: scroll; */
 }
 
 .cart-item-wrapper {
     width: 80%;
-    /* Need a min width */
     margin: 0 auto;
     display: flex;
     padding: 20px 0;

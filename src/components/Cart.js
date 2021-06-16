@@ -1,6 +1,7 @@
 import React from 'react';
 import '../style/generic.css';
 import '../style/cart.css';
+import { Link } from 'react-router-dom';
 
 const Cart = () => {
 
@@ -17,22 +18,26 @@ const Cart = () => {
                 {sampleCart.map(item => {
                     return (
                         <div className='cart-item-wrapper'>
+                            <Link to={`/store/${item.itemID}`}>
                             <div className='cart-img-wrapper'>
                                 <img src={item.url} alt={item.name} />
                             </div>
+                            </Link>
                             <div className='cart-item-text-wrapper'>
                                 <h3>{item.name}</h3>
                                 <p className='price-styling'>${item.price} each</p>
                                 <div className='purchase-qty-wrapper'>
-                                    <button id='increment'>&lt;</button>
+                                    <button className='increment qtyButton'>&lt;</button>
                                     <p className='item-quantity'>{item.qty}</p>
-                                    <button id='decrement'>&gt;</button>
+                                    <button className='decrement qtyButton'>&gt;</button>
                                 </div>
                                 <button>Remove item</button>
                             </div>
                         </div>
                     )
                 })}
+
+
 
                 <div className='cart-total-section'>
                     <h3>Total: $2000</h3>
