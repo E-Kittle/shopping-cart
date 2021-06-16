@@ -1,5 +1,4 @@
 import React from 'react';
-import Item from './Item';
 import { Link } from 'react-router-dom';
 
 const Store = (props) => {
@@ -29,20 +28,12 @@ const Store = (props) => {
                                 <h2>{item.name}</h2>
                                 <p>${item.price}</p>
                             </Link>
-
                         </div>
                     )
                 })}
 
                 <div className='spacer' />
             </div>
-
-
-
-
-            {/* {storeItems.map( item => {
-                return <Item item={item} />
-            })} */}
         </div>
     )
 
