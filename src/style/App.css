@@ -1,5 +1,36 @@
+/* This css file contains styling for the basic layout (App.css) and for the nav element */
+
+
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+}
+
+body {
+    /* background: linear-gradient(200deg, #013152, #011624, #000000);
+    height: 100vh; */
+}
+
+
+nav {
+    background-color: rgba(0, 0, 0 , 0);
+    min-height: 100px;
+    display: flex;
+    padding-top: 10px;
+    flex-direction: row-reverse;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    width: 300px;
+    justify-content: space-around;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+
 }

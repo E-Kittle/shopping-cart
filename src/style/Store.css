@@ -1,0 +1,39 @@
+.item-page {
+    display: flex;
+    height: 80vh;
+    width: 80%;
+    margin: 0 auto;
+    /* border: solid; */
+}
+
+.item-page img {
+    object-fit:cover;
+    height: 400px;
+}
+
+.item-page .item-data {
+    width: 50%;
+    text-align: center;
+}
+
+.item-data h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.item-cta {
+    margin-top: 100px;
+}
+
+.purchase-qty-wrapper {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+form button {
+    /* border: solid #013152 2px; */
+    border: none;
+    background-color: #000000;
+    color: white;
+}

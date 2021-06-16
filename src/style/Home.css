@@ -4,7 +4,7 @@ body {
 }
 
 .hero-container {
-    background-image: url(/public/images/deep-sea.jpeg);
+    /* background-image: url(/images/deep-sea.jpeg);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover; */
 }
