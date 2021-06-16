@@ -1,5 +1,6 @@
 import React from 'react';
-import '../style/App.css'
+import '../style/App.css';
+import { Link } from 'react-router-dom';
 
 const Nav = (props) => {
 
@@ -7,10 +8,17 @@ const Nav = (props) => {
     return (
         <nav>
             <ul className='nav-list'>
-                <li><a href='#'>Home</a></li>
-                <li><a href='#'>Store</a></li>
+                <Link to="/" exact>
+                    <li>Home</li>
+                </Link>
+                <Link to="/store">
+                    <li>Store</li>
+                </Link>
+
                 {/* Add an image for cart later */}
-                <li><a href='#'>Cart</a></li>
+                <Link to="/cart">
+                    <li>Cart</li>
+                </Link>
             </ul>
         </nav>
     )

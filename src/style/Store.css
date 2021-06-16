@@ -1,9 +1,53 @@
-.item-page {
-    display: flex;
-    height: 80vh;
+
+.store-item-wrapper {
+    display: grid;
     width: 80%;
     margin: 0 auto;
-    /* border: solid; */
+    grid-template-columns: repeat(auto-fill, 300px);
+    grid-gap: 20px;
+    justify-content: center;
+}
+
+.store-item-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 325px;
+}
+
+.store-item-container h2 {
+    margin-top: 8px;
+}
+
+.store-item-container p {
+    margin-top: 4px;
+}
+
+
+.store-item-container img{
+    width: 250px;
+    height: 250px;
+}
+
+.spacer {
+    margin: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Styling for the pages on the individual items */
+.item-page {
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
 }
 
 .item-page img {
@@ -36,4 +80,30 @@ form button {
     border: none;
     background-color: #000000;
     color: white;
+}
+
+
+@media (max-width: 1200px) {
+
+    /* Media query styling for the store page */
+    .store-item-wrapper {
+        width: 100%;
+        grid-template-columns: repeat(auto-fill, 160px);
+        grid-gap: 5px;
+    }
+
+    .store-item-container {
+        height: 200px;
+    }
+
+    .store-item-container h2 {
+        font-size: 12px;
+        margin-top: 4px;
+    }
+
+
+    .store-item-container img {
+        width: 150px;
+        height: 150px;
+    }
 }
