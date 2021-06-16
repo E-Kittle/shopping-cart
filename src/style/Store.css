@@ -52,7 +52,8 @@
 }
 
 .item-data {
-    width: 50%;
+    width: 40%;
+    margin: 0 auto;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -63,15 +64,23 @@
     margin-bottom: 20px;
 }
 
+.item-data p {
+    margin-bottom: 20px;
+}
+
 .item-cta {
     margin-top: 100px;
     /* border: solid; */
     width: 40%;
     align-self: center;
-    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
+/* Everything below this line is old */
 .purchase-qty-wrapper {
+    align-self: center;
     display: flex;
     /* justify-content: center; */
     padding: 10px 0;

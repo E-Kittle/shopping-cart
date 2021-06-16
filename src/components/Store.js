@@ -16,7 +16,7 @@ const Store = (props) => {
 
     return (
         <div>
-            <h1 className='section-title'>Store</h1>
+            <h1 className='section-title'>Pick and Choose your perfect nightmare concoction</h1>
 
 
             <div className="store-item-wrapper">
